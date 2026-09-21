@@ -1,0 +1,11 @@
+CompileFlags:
+  CompilationDatabase: build/Debug
+  Add:
+    - -DDEBUG
+    - -DSTM32F407xx
+    - -DUSE_HAL_DRIVER
+    - -mcpu=cortex-m4
+    - -mfpu=fpv4-sp-d16
+    - -mfloat-abi=hard
+    - -O0
+    - -g3
