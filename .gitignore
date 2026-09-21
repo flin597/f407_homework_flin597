@@ -1,0 +1,10 @@
+.vs.code/
+build/
+Debug/
+Release/
+*.o
+*.obj
+*.su
+*.hex
+*.elf
+*.map
