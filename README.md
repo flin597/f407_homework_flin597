@@ -36,6 +36,7 @@ The projects cover fundamental peripherals, communication protocols, control alg
 
 1. Clone the repository:
    ```bash
+      git clone https://github.com/flin597/f407_homework_flin597.git
 2. Open the desired project folder (e.g., RM27-tutorial-PID) in your preferred IDE.
 3. Compile and flash the code to your STM32F407 board using ST-Link.
 4. For PID tests, connect the motor driver, encoder, and power supply properly. Check LOG.md for more details.
