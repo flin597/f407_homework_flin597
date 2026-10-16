@@ -1,59 +1,52 @@
-# STM32F407 Homework
+# STM32 Embedded Learning & Motor Control
 
-本仓库是基于 STM32F407IGH6 (C板) 和 STM32F407VGT6 (最小系统板) 的作业仓库模板
+This repository contains my hands-on embedded software training and practice using **STM32F407** microcontrollers (including STM32F407IGH6 and STM32F407VGT6), completed during my training time in the **PnX Robotics Team**.
 
-## Design
+The projects cover fundamental peripherals, communication protocols, control algorithms, and real-time systems.
 
-我们的作业设计将尽可能围绕对灯效的操作展开，每次的内容都会在上一次的内容的基础上进行增加与精进，尽量能够覆盖之前的内容并有一个良好的延续性。
+## 📂 Repository Structure
 
-请大家良好的进行版本管理并体会版本管理的需求与优越性，之后的作业都通过git仓库链接进行提交，同时可以通过 LOG.md 书写每次完成的任务与任务截图。
+- **`BreathingLight`**: PWM-based breathing LED implementation.
+- **`EXTI0919`**: External interrupt (EXTI) configuration and testing.
+- **`DMA`**: Direct Memory Access (DMA) data transfer practice.
+- **`CAN`**: CAN bus communication implementation for peripheral/sensor integration.
+- **`RM27-tutorial-PID`**: Cascade PID controller implementation for motor control.
+- **`RTOS`**: Real-Time Operating System (RTOS) task scheduling and management.
+- **`SYSTEMF4`**: STM32F4 system-level configuration files.
+- **`stm32f407igh6` / `stm32f407vgt6`**: Board-specific basic configurations and initialization code.
+- **`LOG.md`**: Development logs and learning notes.
+- **`assets`**: Images and screenshots of hardware setups and results.
 
-## Usage
+## 🚀 Key Features & What I Did
 
-创建个人仓库的时候，可以通过
+- **Peripherals & Drivers**: Implemented GPIO, timers, PWM, UART, CAN, and I2C on STM32F407.
+- **Motor Control**: Built a motor control demo using PWM speed control and encoder feedback.
+- **Cascade PID**: Tuned both inner and outer loops of a cascade PID controller for closed-loop motor speed and position control.
+- **RTOS**: Practiced task scheduling and real-time control using RTOS.
+- **Debugging**: Used serial logging and basic measurements to debug hardware/software issues, documenting the process in `LOG.md`.
 
-```bash
-git clone https://github.com/HKUSTGZ-ROBOMASTER-PNX/stm32f407_hw_template.git
-```
+## 🛠️ Hardware & Software
 
-将本仓库克隆到本地，创建自己的仓库，设置可见性为 public
+- **MCU**: STM32F407IGH6 / STM32F407VGT6
+- **IDE/Toolchain**: STM32CubeMX, VS Code, Git
+- **Language**: C/C++
+- **Debugger**: ST-Link, DAP
 
-![create](assets/image.png)
+## 📖 How to Use
 
-并将仓库命名为 f407_homework_[your name or number e.g. szhang123]，之后的所有作业应当在你的仓库进行提交与版本管理。
+1. Clone the repository:
+   ```bash
+2. Open the desired project folder (e.g., RM27-tutorial-PID) in your preferred IDE.
+3. Compile and flash the code to your STM32F407 board using ST-Link.
+4. For PID tests, connect the motor driver, encoder, and power supply properly. Check LOG.md for more details.
 
-可以只选择你拿到的板子文件夹并重新放到自己的仓库。
+## 📝 Notes
+• This repository is a personal learning record and a collection of team training assignments.
+• Some base code and templates were initialized from team tutorials; the implementations, debugging, and documentation are my own work.
+• Code is for educational and training purposes.
 
-基础的操作包括以下几个：
-
-```bash
-git remote add upstream [your repository url]
-```
-
-设置项目的上游仓库，如果你是现在本地创建的文件夹希望同步到你的仓库
-
-```bash
-git add .
-```
-
-在每一次添加新内容之后，都需要执行这个命令让git了解你的更改
-
-```bash
-git commit -m "[init/feat/chore/fix/refactor]:[conclusion of change]"
-```
-
-添加完内容之后，需要对本次提交添加描述，描述请严格按照上面的格式进行，可以分为
-
-- init: 初始化本仓库，用于第一次提交
-- feat: 为仓库添加新功能
-- fix: 修复了仓库的某些bug
-- chore: 进行一些与主题代码无关的改动
-- refactor: 对代码架构进行重构
-
-后面接着对当前修改的简要描述。
-
-```bash
-git push origin
-```
-
-将修改推送到远端。
+## 📬 Contact
+Fangyan LIN
+• Email: flin597@connect.hkust-gz.edu.cn
+• GitHub: https://github.com/flin597
+   git clone https://github.com/flin597/f407_homework_flin597.git
